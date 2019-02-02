@@ -24,7 +24,16 @@
 
     <a href="{{ path('task_index') }}">back to list</a>
 
-    <a href="{{ path('task_edit', {'id': task.id}) }}">edit</a>
+    <div class="d-flex">
+        <a class="btn btn-primary mr-2"
+           role="button"
+           href="{{ path('task_edit', {'id': task.id}) }}"
+        >
+            <i class="fa fa-edit"></i>
+            Edit
+        </a>
 
-    {{ include('task/_delete_form.html.twig') }}
+        {{ include('task/_delete_form.html.twig') }}
+    </div>
+
 {% endblock %}
