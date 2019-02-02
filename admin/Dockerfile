@@ -5,7 +5,7 @@ RUN apk add --update \
     composer \
     curl
 
-RUN docker-php-ext-install pdo_mysql
+RUN docker-php-ext-install pdo_mysql && docker-php-ext-enable pdo_mysql
 
 RUN rm -rf /var/cache/apk/* && rm -rf /tmp/*
 
