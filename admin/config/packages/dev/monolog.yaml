@@ -3,7 +3,7 @@ monolog:
         main:
             type: stream
             path: "php://stdout"
-            level: debug
+            level: info
             channels: ["!event"]
         console:
             type: console
