@@ -2,6 +2,8 @@
 
 This is a coding project machine contributor. Your best friend.
 
+[See architecture overview](https://www.lucidchart.com/documents/view/fcafdb4a-78f1-4eaa-a484-526019425f11/0)
+
 # Skills
 
 - [ ] Find and fix outdated dependencies
