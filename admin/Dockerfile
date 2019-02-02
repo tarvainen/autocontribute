@@ -5,6 +5,8 @@ RUN apk add --update \
     composer \
     curl
 
+RUN docker-php-ext-install pdo_mysql
+
 RUN rm -rf /var/cache/apk/* && rm -rf /tmp/*
 
 CMD ["php-fpm"]

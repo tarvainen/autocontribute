@@ -7,9 +7,19 @@ services:
     volumes:
       - ./admin/:/app:cached
 
+  admin_db:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - admin_db
+
   nginx:
     image: nginx:latest
     volumes:
       - ./config/nginx.conf:/etc/nginx/conf.d/default.conf
     ports:
       - 8080:80
+
+volumes:
+  admin_db:
